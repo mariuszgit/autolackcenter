@@ -1,0 +1,48 @@
+.c-contact-item {
+    color: $gray-dark;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    &__icon {
+        align-items: center;
+        border: 1px solid $gray-light;
+        // background-color: rgba($color: $white, $alpha: .5);
+        display: flex;
+        justify-content: center;
+        // height: 50px;
+        padding: $grid-base + 2;
+        // width: 50px;
+        margin-bottom: $grid-base;
+        @include large-up {
+            margin-bottom: 0;
+            margin-right: $grid-base;
+        }
+        @include border-radius($border-radius);
+    }
+
+    &__image {
+        color: $accent-color;
+        max-height: 15px;
+        max-width: 15px;
+    }
+
+    &__text {
+        // font-weight: 700;
+        text-align: center;
+        @include large-up {
+            text-align: left;
+        }
+    }
+
+    @include large-up {
+        margin-bottom: 0;
+    }
+
+    @include large-up {
+        flex-direction: row;
+    }
+
+}

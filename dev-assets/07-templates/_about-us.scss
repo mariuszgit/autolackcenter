@@ -1,0 +1,68 @@
+.t-about-us {
+    padding: 4rem 0;
+    @include large-up {
+        padding: 6rem 0;
+    }
+
+    &__left {
+        // transform: translate(3 * $grid-base);
+        display: none;
+        @include medium-up {
+            display: block;
+            // margin-right: -3 * $grid-base;
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        // margin-left: -3 * $grid-base;
+
+        // transform: translate(-3 * $grid-base);
+    }
+
+    &__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: $grid-base;
+    }
+
+    &__btn {
+        margin-right: $grid-base * 2;
+        margin-bottom: $grid-base * 2;
+    }
+
+    ul {
+        margin-top: $grid-base * 2;
+        margin-bottom: $grid-base * 3;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        margin-bottom: $grid-base;
+    }
+    li a {
+        font-size: $font-size-4;
+        line-height: $line-height-lg;
+        font-weight: 300;
+    }
+    svg {
+        width: 25px;
+        height: 25px;
+        fill: $accent-color;
+        margin-right: $grid-base * 2;
+    }
+
+    // &__text {
+    //     background: #fff;        
+    //     padding: 2rem;
+    //     width: auto;
+    //     // margin-right: -6 * $grid-base;
+    //     @include medium-up {
+    //         // box-shadow: rgba($color: $gray-light, $alpha: .2) 0px 25px 30px;
+    //     }
+    // }
+
+
+}

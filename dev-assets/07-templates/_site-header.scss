@@ -1,0 +1,101 @@
+.t-site-header {
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 2 * $grid-base;
+        padding-top: 2 * $grid-base;
+    }
+
+    &__hero {
+        background: url(../img/banner-oferta-1.png) center;
+        background-size: cover;
+        padding: $grid-base*12 0 $grid-base*15;
+        position: relative;
+        overflow: hidden;
+
+        @include medium-up {
+            padding: $grid-base*20 0 $grid-base*23;
+        }
+
+        &:after {
+            background: url(../img/arrow-bar.png);
+            background-position: center;
+            content: "";
+            display: block;
+            height: 28px;
+            position: absolute;
+            bottom: 0;
+            left: calc(50% - 1000px);
+            width: 2000px;
+        }
+
+        .c-btn {
+            // margin-top: $gutter/2;
+        }
+    }
+
+    &__intro-text {
+        color: $white;
+        margin-bottom: $grid-base * 2;
+        @include large-up {
+            font-size: $font-size-3;
+            margin-bottom: $grid-base * 4;
+        }
+    }
+
+    &__divider {
+        color: $white;
+        display: block;
+        font-size: $font-size-5;
+        font-weight: 700;
+        padding: $grid-base/2;
+        text-transform: uppercase;
+
+        @include medium-up {
+            display: inline-block;
+        }
+
+    }
+
+}
+
+// JUMBO SECTION
+
+.jumbo {
+    background: url(../img/banner-oferta-1.png) center;
+    background-size: cover;
+    padding: 10rem 0;
+    position: relative;
+    overflow: hidden;
+
+    @include medium-up {
+        padding: 14rem 0;
+    }
+
+    &:after {
+        background: url(../img/arrow-bar.png);
+        background-position: center;
+        content: "";
+        display: block;
+        height: 28px;
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 1000px);
+        width: 2000px;
+    }
+    &__overlay {
+        background: rgba($color: $white, $alpha: .3);
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1
+    }
+
+    .c-btn {
+        margin-top: $gutter/2;
+    }
+}

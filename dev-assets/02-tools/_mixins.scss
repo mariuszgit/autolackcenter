@@ -1,0 +1,32 @@
+// Od srednich w gore
+@mixin medium-up {
+    @media (min-width: #{$bp_medium}) {
+        @content
+    }
+}
+
+// Od duzych w gore
+@mixin large-up {
+    @media (min-width: #{$bp_large}) {
+        @content
+    }
+}
+
+// border radius
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
+// transition
+@mixin transition($property, $duration, $easing: linear) {
+	transition: $property $duration $easing;
+	-webkit-transition: $property $duration $easing;
+	-moz-transition: $property $duration $easing;
+}
+
+// animated hover
+@mixin hover-animation() {
+    color: pink;
+}

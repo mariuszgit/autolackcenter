@@ -1,0 +1,26 @@
+.t-contact-bar {
+    padding-top: $grid-base * 4;
+    background-color: $gray-extra-light;
+
+    &__item {
+
+        // background-color: red;
+        margin-bottom: $grid-base * 4;
+    }
+    // &__item {
+    //     align-items: center;
+    //     display: flex;
+    //     // justify-content: flex-start;
+    //     height: 100%;
+    //     margin-bottom: 2rem;
+    // }
+    // &__image {
+    //     opacity: 50%;
+    //     margin-right: $gutter;
+    //     // margin-left: $gutter;
+    //     width: 30px;
+    // }
+    // a {
+    //     display: block;
+    // }
+}

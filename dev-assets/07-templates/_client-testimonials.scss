@@ -1,0 +1,25 @@
+.t-client-testimonials {
+    background: url(../img/background-red.png) center fixed;
+    background-size: cover;
+    padding: 5rem 0;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__imagex {
+
+        height: 50px;
+    }
+
+    .c-heading--level2 {
+        margin-bottom: $grid-base*3;
+    }
+
+    .c-heading--level3 {
+        color: $white;
+    }
+
+}
